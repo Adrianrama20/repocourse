@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-image: url('img/background-4876988_1920.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .container{
+            width: 400px;
+            height: 500px;
+           
+           
+            border-radius: 0px 30px 30px 0px;
+            background-color: rgb(204, 237, 252);
+            font-family: Poppins;
+            gap: px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);   
+        }
+        .container1{
+            width: 550px;
+            height: 500px;
+            border-radius: 30px 0px 0px 30px;
+            background-color: rgb(255, 255, 255);
+            font-family: Poppins;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);   
+        }
+        
+        .container img{
+            width: 350px;
+        }
+        .div-header{
+                margin-top: 30px;
+            }
+        .container1 img{
+            width: 200px;
+        }
+        .container h3{
+           
+            margin-top:100px ;
+            margin-bottom: 10px;
+        }
+        .container p{
+            text-align: center;
+            font-size: 14px;
+            
+            width: 300px;
+        }
+        .div{
+            display: flex;
+            
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        .nama{
+            font-size: 12px;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+        .nama input{
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .btn-regist > .submit{
+            justify-content: center;
+           
+            text-align: center;
+            align-items: center;
+            margin-right: 16px;
+            padding: 10px 40px 10px 40px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(66, 150, 218);
+            border-radius: 10px;
+        }
+        .btn-regist > .submit:hover{
+            background-color: white;
+            color:rgb(66, 150, 218) ;
+            box-shadow: 0px 0px 2px 0px rgba(49, 125, 212, 0.5);
+        }
+
+        .btn-regist{
+            margin-top: 30px;
+            flex-wrap: wrap;
+            display: flex;
+            
+            
+        }
+        .btn-regist > span{
+            text-decoration: none;
+            margin-left: 16px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .div-input{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+           
+        }
+        .div-input > img{
+            margin-top: 15px;
+            width: 150px;
+        }
+        .div-input input{
+            border: 1px solid  rgb(66, 150, 218) ;
+        }
+
+        
+
+        @media screen and (max-width:550px) {
+            .container{
+                display: none;
+            }
+            .nama{
+                flex-direction: column;
+                
+
+            } 
+            
+            .container1{
+                height: 600px;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            }
+            .btn-regist{
+                flex-direction: column;
+            }
+            .div-input{
+                gap: 20px;
+            }
+            .div-header{
+                margin-top: 30px;
+            }
+            .btn-regist > span{
+                margin: 0px;
+            }
+            .btn-regist{
+                margin: 0px;
+                gap: 10px;
+               
+                
+            }
+            .btn-regist .submit{
+                margin-left: 15px;
+                margin-top:1px ;
+            }
+
+            span .back{
+                color: rgb(66, 150, 218);
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+       <div class="div-header">
+        <h2>Registrasi</h2>
+       </div>
+       <div class="div-input">
+        <div class="div">
+            <div class="nama">
+                <h4>Nama Depan</h4>
+                <input type="text" name="" id="">
+            </div>
+            <div class="nama">
+                <h4>Nama Belakang</h4>
+                <input type="text" name="" id="">
+            </div>
+        </div>
+        <div class="div">
+            <div class="nama">
+                <h4>Email</h4>
+                <input type="email" name="" id="">
+            </div>
+            <div class="nama">
+                <h4>Password</h4>
+                <input type="password" name="" id="">
+            </div>
+        </div>
+        <div class="div">
+            <div class="nama">
+                <h4>Confirm Password</h4>
+                <input type="password" name="" id="">
+            </div>
+            <div class="nama">
+                <h4>No Telepon</h4>
+                <input type="number" name="" id="">
+            </div>
+            
+        </div>
+        
+           <div class="btn-regist">
+            <a class="submit" href="login.html">Submit</a>
+           <span>You Have Account?<a class="back" href="login.html">Login</a></span>
+           </div>
+           
+           
+        
+       </div>
+    </div>
+    <div class="container">
+        <h3>WELCOME TO COURSE-KU</h3>
+        <p>Course-KU Merupakan platform untuk mengembangkan skill programer kamu!!!</p>
+        <img src="img/Designer's work desk, working process.png" alt="">
+    </div>
+   
+</body>
+</html>

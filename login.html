@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-image: url('img/background-4876988_1920.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan opacity 50% */
+            z-index: 1;
+            
+        }
+        .container{
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            z-index: 2;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            font-family: Poppins;
+            gap: 30px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            
+            
+        }
+        .header-login{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        .header-login img{
+            width: 80px;;
+        }
+
+        .div-login{
+            margin-bottom: 20px;
+        }
+        .div-password{
+            margin-bottom: 25px;
+            
+        }
+        .div-login> input{
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0.1px 0px rgba(0, 0, 0, 0.75);
+            border: 1px solid rgb(39, 143, 234);
+        }
+        .div-password > input{
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0px 0px 0.1px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 5px;
+            border: 1px solid rgb(39, 143, 234);
+        }
+
+        .div-login > p{
+            font-size: 14px;
+        }
+        .div-password >p{
+            font-size: 14px;
+        }
+        
+        .div-button{
+            
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        .div-button .a-login{
+            text-align: center;
+            padding: 10px 86px 10px 86px;
+            background-color: rgb(39, 143, 234);
+            border-radius: 5px;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .div-button .a-login:hover{
+            background-color: white;
+            box-shadow: 0px 0px 4px 0px rgba(57, 128, 219, 0.5);
+            color: rgb(39, 143, 234);
+        }
+        .div-button .a-regist{
+            text-align: center;
+            
+            padding: 10px 76px 10px 76px;
+            
+            
+            border-radius: 5px;
+            font-size: 13px;
+            color: rgb(67, 148, 219);
+            text-decoration: none;
+            margin-top: 10px;
+            
+            
+        }
+        .forgot-pas a{
+            font-size: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .foot-login{
+            font-size: 10px;
+            display: flex;
+            
+            color: rgb(174, 174, 174);
+            justify-content: center;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                width: 300px;
+                height: 490px;
+                gap: 20px;
+            }
+
+            .div-login{
+                margin-bottom: 10px;
+            }
+            .foot-login{
+                margin-top: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-login">
+            <img src="img/avatar of a man with glasses in a circle.png" alt="">
+            <h3> User Account</h3>
+        </div>
+        <div class="div-input">
+            <div class="div-login">
+                <p>Email</p>
+                <input type="email" name="" id="" placeholder="example:iroz@gmail.com">
+            </div>
+            <div class="div-password">
+                <p>Password</p>
+                <input type="text" name="" id="">
+                <div class="forgot-pas"><a href="">Forgot password</a></div>
+            </div>
+            <div class="div-button">
+                <a href="dashboad.html" class="a-login">Login</a>
+                
+            </div>
+            <div class="div-button">
+                <a href="Registrasi.html" class="a-regist">Registrasi</a>
+                
+            </div>
+            <div class="foot-login"><p>Powered By Irozz</p></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
